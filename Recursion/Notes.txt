@@ -1,0 +1,40 @@
+1.  Method Call from inside method body .
+
+
+a method can call from body to the 
+
+if it is not control than it will be call stack overflow error .
+we have to use flow control statement to avoid stackover error .
+
+Q1. Prints numbers from using 1 to 10....
+
+
+class Q1 { 
+public static void main(String  args[]) {
+printNum(n);
+}
+
+public static void printNum(int n) {
+ if(n<=10){
+  System.out.println(n);
+PrintNum(n+1);
+}
+}
+}
+
+Q2. print numbers from 10 to 1  without loop..
+
+
+class Program2 {
+public static void main(String args []) {
+printNum(n);
+}
+
+public static void printNum(int n){
+if(n<=10){
+printNum(n+1);
+System.out.println(n);
+}
+
+}
+}
